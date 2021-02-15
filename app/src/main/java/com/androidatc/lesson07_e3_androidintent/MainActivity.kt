@@ -19,8 +19,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun go2registerActivity(view: View){
-        var intent = Intent(this,RegisterActivity::class.java)
-        startActivity(intent)
-    }
 }
