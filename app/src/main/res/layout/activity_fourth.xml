@@ -26,8 +26,8 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="228dp"
-        android:layout_height="190dp"
+        android:layout_width="214dp"
+        android:layout_height="182dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,12 +46,11 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="141dp"
-        android:layout_height="208dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="124dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        android:layout_width="132dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:srcCompat="@drawable/_hotel" />
 
     <ImageView
@@ -75,16 +74,19 @@
 
     <ImageView
         android:id="@+id/imageView21"
-        android:layout_width="153dp"
-        android:layout_height="151dp"
+        android:layout_width="167dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:srcCompat="@drawable/alam_2" />
 
     <ImageView
         android:id="@+id/imageView22"
-        android:layout_width="254dp"
-        android:layout_height="152dp"
+        android:layout_width="225dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
         app:srcCompat="@drawable/_semesta" />
