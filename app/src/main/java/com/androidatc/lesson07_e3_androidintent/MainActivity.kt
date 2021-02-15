@@ -18,4 +18,9 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("name",FirstName_ID.text.toString())
         startActivity(intent)
     }
+
+    fun go2registerActivity(view: View) {
+        var intent = Intent(this,RegisterActivity::class.java)
+        startActivity(intent)
+    }
 }
