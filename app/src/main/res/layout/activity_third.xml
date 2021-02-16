@@ -6,45 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DMActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
-        app:srcCompat="@drawable/_legend_of_zelda_artwork_the_legend_of_zelda_twilight_princess" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@drawable/_01260_original_2340x1648" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719"
-        app:srcCompat="@drawable/_03033_original_4081x3246" />
 
     <TextView
         android:id="@+id/textView4"
@@ -60,40 +21,135 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="168dp"
-        android:layout_height="42dp"
-        android:text="Agus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="116dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="168dp"
-        android:layout_height="42dp"
-        android:text="Andi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="168dp"
-        android:layout_height="42dp"
-        android:text="Adi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_marginBottom="50dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/_legend_of_zelda_artwork_the_legend_of_zelda_twilight_princess" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="168dp"
+                    android:layout_height="42dp"
+                    android:layout_column="2"
+                    android:layout_marginLeft="50dp"
+                    android:text="Agus" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_column="1"
+                    android:layout_marginBottom="50dp"
+                    app:srcCompat="@drawable/_01260_original_2340x1648" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="168dp"
+                    android:layout_height="42dp"
+                    android:text="Andi"
+                    android:layout_marginLeft="50dp"
+                    android:layout_column="2" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_column="1"
+                    android:layout_marginBottom="50dp"
+                    app:srcCompat="@drawable/_03033_original_4081x3246" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="168dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Adi"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageTerakhir"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="50dp"
+                    app:srcCompat="@drawable/_naisbitt_john" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="168dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Badu"
+                    android:layout_column="2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageTerakhirLast"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/_natural" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="168dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Ratu"
+                    android:layout_column="2"/>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

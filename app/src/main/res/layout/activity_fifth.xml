@@ -105,7 +105,7 @@
     <Button
         android:id="@+id/menu_button"
         android:layout_width="300px"
-        android:layout_height="100px"
+        android:layout_height="150px"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Gallery "
