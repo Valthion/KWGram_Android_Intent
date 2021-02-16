@@ -6,6 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TeksNama"
+        android:layout_width="273dp"
+        android:layout_height="62dp"
+        android:hint="Write your thoughts..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Posting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
@@ -20,35 +40,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_semesta" />
 
-    <TextView
-        style="@style/NewPost"
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="350dp"
-        android:text="New Post"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
         android:adjustViewBounds="true"
         android:maxWidth="40dp"
         android:maxHeight="40dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/kanan" />
 
     <ImageView
