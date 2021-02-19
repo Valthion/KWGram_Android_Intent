@@ -21,7 +21,7 @@ class UploadActivity : AppCompatActivity() {
 
     fun GallerySnack(view: View) {
         var SnackB: Snackbar = Snackbar.make(findViewById(R.id.constraintLayout)
-            ,"You Choose From Gallery",Snackbar.LENGTH_LONG).setAction("Retry") {}
+            ,"You Choose From Gallery",Snackbar.LENGTH_LONG).setAction("Undo") {}
 
         SnackB.setActionTextColor(Color.RED)
         SnackB.show()
@@ -37,6 +37,7 @@ class UploadActivity : AppCompatActivity() {
         SaveAlert.setPositiveButton("Yes") {
                 dialogInterface: DialogInterface?, which: Int -> Toast.makeText(applicationContext,"Uploaded",
             Toast.LENGTH_LONG).show()
+
         }
         SaveAlert.setNegativeButton("No") {
 
