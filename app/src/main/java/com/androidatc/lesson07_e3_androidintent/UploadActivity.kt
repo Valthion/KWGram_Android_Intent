@@ -9,6 +9,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_fifth.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_second.*
 import kotlinx.android.synthetic.main.activity_third.*
 
@@ -38,6 +40,7 @@ class UploadActivity : AppCompatActivity() {
                 dialogInterface: DialogInterface?, which: Int -> Toast.makeText(applicationContext,"Uploaded",
             Toast.LENGTH_LONG).show()
             var intent = Intent(this,UploadProcessActivity::class.java)
+            intent.putExtra("caption",Posting.text.toString())
             startActivity(intent)
         }
         SaveAlert.setNegativeButton("No") {

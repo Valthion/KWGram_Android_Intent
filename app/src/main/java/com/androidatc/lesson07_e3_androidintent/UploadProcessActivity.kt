@@ -3,6 +3,7 @@ package com.androidatc.lesson07_e3_androidintent
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_second.*
 import kotlinx.android.synthetic.main.upload_process.*
 
 class UploadProcessActivity : AppCompatActivity() {
@@ -13,6 +14,9 @@ class UploadProcessActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.upload_process)
+
+        var message = intent.getStringExtra("caption")
+        CaptionText.text = "Caption : " + message
 
         StopUpload.setOnClickListener {
                 view -> Thread(Runnable {
