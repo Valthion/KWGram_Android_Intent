@@ -37,7 +37,8 @@ class UploadActivity : AppCompatActivity() {
         SaveAlert.setPositiveButton("Yes") {
                 dialogInterface: DialogInterface?, which: Int -> Toast.makeText(applicationContext,"Uploaded",
             Toast.LENGTH_LONG).show()
-
+            var intent = Intent(this,UploadProcessActivity::class.java)
+            startActivity(intent)
         }
         SaveAlert.setNegativeButton("No") {
 
@@ -48,6 +49,7 @@ class UploadActivity : AppCompatActivity() {
 
         SaveAlert.show()
     }
+
 
     fun go2secondActivity(view: View){
         var intent = Intent(this,SecondActivity::class.java)
