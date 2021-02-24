@@ -10,9 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_fifth.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_second.*
-import kotlinx.android.synthetic.main.activity_third.*
+
 
 class UploadActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
